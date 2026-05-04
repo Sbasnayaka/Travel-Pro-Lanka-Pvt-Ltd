@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Pro Lanka Pvt Ltd | Premium Travel Experiences in Sri Lanka</title>
+  <meta name="description" content="Travel Pro Lanka Pvt Ltd — Discover premium travel experiences, tailor-made tours, and trusted transport in Sri Lanka." />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/fav-icon.png" />
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav" id="navBar">
+      <a class="brand" href="#home" aria-label="Travel Pro Lanka Home">
+        <img src="assets/logo.png" alt="Travel Pro Lanka Logo" class="brand-logo" />
+        <div class="brand-text">
+          <strong>Travel Pro Lanka Pvt Ltd</strong>
+          <span>travelprolanka.com</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#packages">Packages</a>
+        <a href="#partners">Partners</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="nav-cta" href="tel:+94770000000"><span class="phone-dot"></span> +94 77 000 00 00</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="leaf l1"></div>
+      <div class="leaf l2"></div>
+      <div class="leaf l3"></div>
+      <div class="leaf l4"></div>
+      <div class="leaf l5"></div>
+      <div class="container">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <div class="eyebrow">Premium Sri Lanka Travel Experiences</div>
+            <h1>
+              Discover Sri Lanka
+              <span class="accent">with Travel Pro Lanka</span>
+            </h1>
+            <p>
+              Tailor-made tours, trusted transport, handpicked hotels, beach escapes, hill-country adventures,
+              and unforgettable island journeys — all in one beautiful place.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#contact">Plan Your Trip</a>
+              <a class="btn btn-secondary" href="#packages">View Packages</a>
+            </div>
+          </div>
+
+          <div class="hero-card-wrap">
+            <div class="hero-ornament"></div>
+            <div class="hero-card" id="heroSliderCard">
+              <img id="heroSlideImg" src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1400&q=80" alt="Sri Lanka travel scenery" />
+              <div class="hero-overlay">
+                <strong id="heroSlideTitle">Golden beaches & island sunsets</strong>
+                <span id="heroSlideText">Luxury, comfort and local expertise for every traveler.</span>
+              </div>
+            </div>
+            <div class="cloud-band"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section class="section" aria-label="Highlights">
+      <div class="container">
+        <div class="section-title">
+          <div class="eyebrow">Why choose us</div>
+          <h2>When you travel with <span class="accent">Travel Pro Lanka</span></h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature">
+            <div class="icon-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
+                <path d="M4 16c2.5-4.7 5.5-7 8-10 2.5 3 5.5 5.3 8 10" />
+                <path d="M8 16h8" />
+              </svg>
+            </div>
+            <h3>Local expertise</h3>
+            <p>Friendly guidance, flexible planning, and smooth support from arrival to departure.</p>
+          </article>
+          <article class="feature">
+            <div class="icon-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
+                <path d="M4 17h16" />
+                <path d="M6 17V7h12v10" />
+                <path d="M8 7l4-3 4 3" />
+              </svg>
+            </div>
+            <h3>Comfortable stays</h3>
+            <p>Selected hotels, villas, and resorts that suit families, couples, and groups.</p>
+          </article>
+          <article class="feature">
+            <div class="icon-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
+                <path d="M4 15l6-6 4 4 6-7" />
+                <path d="M4 19h16" />
+              </svg>
+            </div>
+            <h3>Best routes</h3>
+            <p>Efficient itineraries that reduce travel stress and maximize scenic experiences.</p>
+          </article>
+          <article class="feature">
+            <div class="icon-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
+                <path d="M12 3v18" />
+                <path d="M5 10l7-7 7 7" />
+                <path d="M5 14l7 7 7-7" />
+              </svg>
+            </div>
+            <h3>Trusted service</h3>
+            <p>Transparent communication, reliable partners, and memorable travel moments.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+      <div class="container about-grid">
+        <div class="about-card">
+          <div class="eyebrow">About us</div>
+          <h2>Crafting beautiful journeys across <span class="accent">Sri Lanka</span></h2>
+          <p>
+            Travel Pro Lanka Pvt Ltd creates elegant, stress-free holiday experiences designed around your pace,
+            your budget, and your dream destinations. From coastlines and cultural heritage to tea hills and wildlife,
+            we build trips that feel personal.
+          </p>
+          <p style="margin-top:14px">
+            Whether it is a romantic getaway, a family vacation, a group tour, or a custom corporate trip,
+            our team handles the details so you can enjoy the journey.
+          </p>
+          <div class="about-stats">
+            <div class="stat"><strong>50+</strong><span>Tours planned</span></div>
+            <div class="stat"><strong>24/7</strong><span>Trip support</span></div>
+            <div class="stat"><strong>100%</strong><span>Tailored service</span></div>
+          </div>
+        </div>
+
+        <div class="about-visual">
+          <div class="frame">
+            <img src="https://images.unsplash.com/photo-1518546305927-5a555bb7020d?auto=format&fit=crop&w=1400&q=80" alt="Mountain landscape in Sri Lanka style" />
+          </div>
+          <div class="floating-box">
+            <strong>Elegant experiences, warm hospitality</strong>
+            <span>Every journey is planned with comfort, beauty, and attention to detail.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-title">
+          <div class="eyebrow">Services</div>
+          <h2>What we provide</h2>
+          <p>Everything needed for a smooth trip — from transport and accommodation to curated activities and local support.</p>
+        </div>
+        <div class="cards-grid cards-3">
+          <article class="service-card">
+            <img src="https://images.unsplash.com/photo-1502920917128-1aa5007646b8?auto=format&fit=crop&w=1200&q=80" alt="Airport transfer service" />
+            <div class="card-body">
+              <h3>Airport Transfers</h3>
+              <p>Private, punctual pickups and drop-offs with professional drivers and comfortable vehicles.</p>
+              <div class="card-footer"><span class="pill">Safe & reliable</span><a class="btn btn-secondary" href="#contact">Book now</a></div>
+            </div>
+          </article>
+          <article class="service-card">
+            <img src="https://images.unsplash.com/photo-1516183733822-ff3f7d0a7c2a?auto=format&fit=crop&w=1200&q=80" alt="Tour planning" />
+            <div class="card-body">
+              <h3>Custom Tour Planning</h3>
+              <p>Built for couples, families, groups, and solo travelers who want a trip that fits them perfectly.</p>
+              <div class="card-footer"><span class="pill">Personalized</span><a class="btn btn-secondary" href="#contact">Get plan</a></div>
+            </div>
+          </article>
+          <article class="service-card">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80" alt="Meal and all-inclusive travel" />
+            <div class="card-body">
+              <h3>All-Inclusive Packages</h3>
+              <p>Accommodation, meals, experiences, and transport arranged in one complete travel package.</p>
+              <div class="card-footer"><span class="pill">All in one</span><a class="btn btn-secondary" href="#packages">Explore</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section class="section" id="packages">
+      <div class="container">
+        <div class="section-title">
+          <div class="eyebrow">Packages</div>
+          <h2>Featured travel packages</h2>
+          <p>Choose a ready-made experience or ask us to create something unique for your travel dates.</p>
+        </div>
+        <div class="cards-grid cards-4">
+          <article class="package-card">
+            <div class="price">From LKR 45,000</div>
+            <img src="https://images.unsplash.com/photo-1483683804023-6ccdb62f86ef?auto=format&fit=crop&w=1200&q=80" alt="Beach escape" />
+            <div class="card-body">
+              <h3>Beach Escape</h3>
+              <p>Relax by the sea with a simple, soothing itinerary.</p>
+              <ul>
+                <li>2 nights stay</li>
+                <li>Private transport</li>
+                <li>Breakfast included</li>
+              </ul>
+            </div>
+          </article>
+          <article class="package-card">
+            <div class="price">From LKR 62,000</div>
+            <img src="https://images.unsplash.com/photo-1470770903676-69b98201ea1c?auto=format&fit=crop&w=1200&q=80" alt="Hill country tour" />
+            <div class="card-body">
+              <h3>Hill Country Tour</h3>
+              <p>Tea hills, cool air, waterfalls, and scenic train views.</p>
+              <ul>
+                <li>3 nights stay</li>
+                <li>Sightseeing route</li>
+                <li>Driver guide</li>
+              </ul>
+            </div>
+          </article>
+          <article class="package-card">
+            <div class="price">From LKR 88,000</div>
+            <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=1200&q=80" alt="Luxury honeymoon" />
+            <div class="card-body">
+              <h3>Honeymoon Special</h3>
+              <p>Romantic stays, privacy, and handpicked experiences.</p>
+              <ul>
+                <li>4 nights stay</li>
+                <li>Private dining</li>
+                <li>Decorated room</li>
+              </ul>
+            </div>
+          </article>
+          <article class="package-card">
+            <div class="price">From LKR 99,000</div>
+            <img src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200&q=80" alt="Family holiday" />
+            <div class="card-body">
+              <h3>Family Holiday</h3>
+              <p>Easy, fun, and comfortable family-friendly travel.</p>
+              <ul>
+                <li>Kid-friendly stops</li>
+                <li>Flexible schedule</li>
+                <li>Support included</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="section" id="partners">
+      <div class="container partners-wrap">
+        <div class="section-title">
+          <div class="eyebrow">Trusted partners</div>
+          <h2>Our trusted partners</h2>
+          <p>Hotels, transport providers, and destination collaborators that help us deliver high-quality trips.</p>
+        </div>
+        <div class="partners-track" aria-label="Partner logos moving">
+          <div class="partner">
+            <div class="partner-badge">✦</div>
+            <div><strong>Ocean Pearl</strong><span>Resort partner</span></div>
+          </div>
+          <div class="partner">
+            <div class="partner-badge">⟡</div>
+            <div><strong>Blue Horizon</strong><span>Transport partner</span></div>
+          </div>
+          <div class="partner">
+            <div class="partner-badge">◌</div>
+            <div><strong>Serene Stays</strong><span>Hotel partner</span></div>
+          </div>
+          <div class="partner">
+            <div class="partner-badge">❖</div>
+            <div><strong>Ceylon Trails</strong><span>Tour partner</span></div>
+          </div>
+          <div class="partner">
+            <div class="partner-badge">✦</div>
+            <div><strong>Island Nest</strong><span>Villa partner</span></div>
+          </div>
+          <div class="partner">
+            <div class="partner-badge">⟡</div>
+            <div><strong>Summit Path</strong><span>Guide partner</span></div>
+          </div>
+          <div class="partner">
+            <div class="partner-badge">◌</div>
+            <div><strong>Golden Coast</strong><span>Beach partner</span></div>
+          </div>
+          <div class="partner">
+            <div class="partner-badge">❖</div>
+            <div><strong>Heritage Link</strong><span>Culture partner</span></div>
+          </div>
+          <div class="partner">
+            <div class="partner-badge">✦</div>
+            <div><strong>Ocean Pearl</strong><span>Resort partner</span></div>
+          </div>
+          <div class="partner">
+            <div class="partner-badge">⟡</div>
+            <div><strong>Blue Horizon</strong><span>Transport partner</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section class="section" id="destinations">
+      <div class="container">
+        <div class="section-title">
+          <div class="eyebrow">Destinations</div>
+          <h2>Beautiful places to explore</h2>
+          <p>From beaches to mountains, Sri Lanka gives every traveler a different kind of wonder.</p>
+        </div>
+        <div class="dest-grid">
+          <article class="dest-card">
+            <img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c7?auto=format&fit=crop&w=1200&q=80" alt="Beach destination" />
+            <div class="dest-overlay">
+              <h3>South Coast</h3>
+              <p>Sun, surf, and seaside relaxation.</p>
+            </div>
+          </article>
+          <article class="dest-card">
+            <img src="https://images.unsplash.com/photo-1542397284385-6010376c5337?auto=format&fit=crop&w=1200&q=80" alt="Mountain destination" />
+            <div class="dest-overlay">
+              <h3>Hill Country</h3>
+              <p>Tea estates, cool air, scenic roads.</p>
+            </div>
+          </article>
+          <article class="dest-card">
+            <img src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200&q=80" alt="City destination" />
+            <div class="dest-overlay">
+              <h3>City & Heritage</h3>
+              <p>Culture, history, shopping, and food.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-title">
+          <div class="eyebrow">Gallery</div>
+          <h2>Moments from our journeys</h2>
+          <p>A soft, airy gallery inspired by the calm and elegant style of the reference design.</p>
+        </div>
+        <div class="gallery-grid">
+          <figure class="g1"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80" alt="Beach view" /></figure>
+          <figure class="g2"><img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" alt="Green mountains" /></figure>
+          <figure class="g3"><img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1200&q=80" alt="Travel food" /></figure>
+          <figure class="g4"><img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80" alt="Forest road" /></figure>
+          <figure class="g5"><img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80" alt="Landscape" /></figure>
+          <figure class="g6"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1200&q=80" alt="Couple travel" /></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="section reviews-wrap" id="reviews">
+      <div class="container">
+        <div class="section-title">
+          <div class="eyebrow">Reviews</div>
+          <h2>What travelers say</h2>
+          <p>Floating review cards add motion and keep the page feeling lively, elegant, and modern.</p>
+        </div>
+        <div class="reviews-float">
+          <article class="review-card">
+            <div class="review-top">
+              <div class="avatar"><img src="https://i.pravatar.cc/120?img=12" alt="Customer" /></div>
+              <div><strong>Kasun M.</strong><span>Family tour</span></div>
+            </div>
+            <div class="stars">★★★★★</div>
+            <p>Our trip was smooth from start to finish. The itinerary felt premium and well thought out.</p>
+          </article>
+          <article class="review-card">
+            <div class="review-top">
+              <div class="avatar"><img src="https://i.pravatar.cc/120?img=32" alt="Customer" /></div>
+              <div><strong>Nimali S.</strong><span>Couple getaway</span></div>
+            </div>
+            <div class="stars">★★★★★</div>
+            <p>Beautiful hotels, lovely service, and excellent communication. Everything looked polished.</p>
+          </article>
+          <article class="review-card">
+            <div class="review-top">
+              <div class="avatar"><img src="https://i.pravatar.cc/120?img=45" alt="Customer" /></div>
+              <div><strong>Ruwan T.</strong><span>Honeymoon trip</span></div>
+            </div>
+            <div class="stars">★★★★★</div>
+            <p>We loved the calm design, easy booking flow, and thoughtful travel suggestions.</p>
+          </article>
+          <article class="review-card">
+            <div class="review-top">
+              <div class="avatar"><img src="https://i.pravatar.cc/120?img=56" alt="Customer" /></div>
+              <div><strong>Malsha P.</strong><span>Group travel</span></div>
+            </div>
+            <div class="stars">★★★★★</div>
+            <p>The team was responsive, flexible, and very professional. Great value and great memories.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-panel">
+          <div class="eyebrow">Contact</div>
+          <h2>Plan your next trip with us</h2>
+          <p style="margin-top:12px">Tell us your destination, dates, and travel style. We will reply with a tailored travel idea.</p>
+          <div class="contact-list">
+            <div class="contact-item">
+              <div class="mini">📍</div>
+              <div><strong>Address</strong><span>Travel Pro Lanka Pvt Ltd, Sri Lanka</span></div>
+            </div>
+            <div class="contact-item">
+              <div class="mini">📞</div>
+              <div><strong>Phone</strong><span>+94 77 000 00 00</span></div>
+            </div>
+            <div class="contact-item">
+              <div class="mini">✉️</div>
+              <div><strong>Email</strong><span>info@travelprolanka.com</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="form-panel">
+          <form>
+            <div class="input-row">
+              <input type="text" placeholder="Your name" aria-label="Your name" />
+              <input type="email" placeholder="Email address" aria-label="Email address" />
+            </div>
+            <div class="input-row">
+              <input type="tel" placeholder="Phone number" aria-label="Phone number" />
+              <select aria-label="Travel type">
+                <option>Travel type</option>
+                <option>Family trip</option>
+                <option>Couple / Honeymoon</option>
+                <option>Group tour</option>
+                <option>Corporate travel</option>
+              </select>
+            </div>
+            <textarea placeholder="Tell us about your trip..."></textarea>
+            <button class="btn btn-primary" type="button">Send Inquiry</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Enhanced Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Col -->
+        <div class="footer-col footer-about">
+          <img src="assets/footer-logo.png" alt="Travel Pro Lanka" class="footer-logo" />
+          <p>Providing premium, tailor-made travel experiences across the beautiful island of Sri Lanka. Your comfort and satisfaction are our priority.</p>
+        </div>
+
+        <!-- Quick Links Col -->
+        <div class="footer-col footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#packages">Tour Packages</a></li>
+            <li><a href="#gallery">Our Gallery</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Services Col -->
+        <div class="footer-col footer-services">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#services">Airport Transfers</a></li>
+            <li><a href="#services">Custom Tour Planning</a></li>
+            <li><a href="#services">All-Inclusive Packages</a></li>
+            <li><a href="#services">Hotel Reservations</a></li>
+            <li><a href="#services">Guide Services</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Col -->
+        <div class="footer-col footer-contact">
+          <h4>Contact Details</h4>
+          <div class="contact-detail">
+            <span class="icon">📍</span>
+            <p>Travel Pro Lanka Pvt Ltd, Sri Lanka</p>
+          </div>
+          <div class="contact-detail">
+            <span class="icon">📞</span>
+            <p>+94 77 000 00 00</p>
+          </div>
+          <div class="contact-detail">
+            <span class="icon">✉️</span>
+            <p>info@travelprolanka.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copyright">
+          <p>&copy; 2026 Travel Pro Lanka Pvt Ltd. All rights reserved.</p>
+          <p>Designed & Developed by <a href="https://www.asseminate.com/" target="_blank" rel="noopener noreferrer">Asseminate</a></p>
+        </div>
+
+        <div class="social-links">
+          <a href="#" class="social-icon" aria-label="Facebook"><img src="assets/facebook.png" alt="Facebook" /></a>
+          <a href="#" class="social-icon" aria-label="Instagram"><img src="assets/instagram.png" alt="Instagram" /></a>
+          <a href="#" class="social-icon" aria-label="TikTok"><img src="assets/tiktok.png" alt="TikTok" /></a>
+          <a href="https://wa.me/94770000000" class="social-icon" aria-label="WhatsApp"><img src="assets/whatsapp.png" alt="WhatsApp" /></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a class="whatsapp-float" href="https://wa.me/94770000000" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp chat">
+    <img src="assets/whatsapp.png" alt="WhatsApp" />
+  </a>
+
+  <!-- Main JavaScript -->
+  <script src="js/main.js" defer></script>
+</body>
+
+</html>
