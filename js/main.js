@@ -99,4 +99,35 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
+  // --- Gallery Lightbox ---
+  const galleryImages = document.querySelectorAll('.gallery-page-grid img, .gallery-grid img');
+  const lightbox = document.getElementById('lightboxModal');
+  const lightboxImg = document.getElementById('lightboxImg');
+  const lightboxClose = document.getElementById('lightboxClose');
+
+  if (galleryImages.length > 0 && lightbox && lightboxImg && lightboxClose) {
+    galleryImages.forEach(img => {
+      img.style.cursor = 'zoom-in';
+      img.addEventListener('click', () => {
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Prevent scrolling
+      });
+    });
+
+    const closeBox = () => {
+      lightbox.classList.remove('active');
+      document.body.style.overflow = '';
+    };
+
+    lightboxClose.addEventListener('click', closeBox);
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeBox();
+    });
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeBox();
+    });
+  }
 });

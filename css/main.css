@@ -1590,3 +1590,125 @@ select:focus {
     grid-template-columns: 1fr;
   }
 }
+
+.detail-single {
+  grid-template-columns: 1fr;
+}
+
+.detail-single .detail-main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+
+@media (max-width: 720px) {
+  /* Existing responsiveness... */
+  .section {
+    padding: 72px 0
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 34px 0 22px
+  }
+
+  .detail-hero {
+    height: 350px;
+    padding-bottom: 40px;
+  }
+
+  .detail-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .detail-meta {
+    flex-direction: column;
+    gap: 8px;
+    font-size: 0.9rem;
+  }
+
+  .gallery-page-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-page-grid figure {
+    height: 280px;
+  }
+
+  .itinerary-list {
+    padding-left: 20px;
+  }
+
+  .itinerary-item h3 {
+    font-size: 1.15rem;
+  }
+  
+  .booking-sidebar {
+    padding: 24px;
+    border-radius: 24px;
+  }
+}
+
+/* --- Gallery Lightbox Modal --- */
+.lightbox-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  backdrop-filter: blur(8px);
+}
+
+.lightbox-modal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 85vh;
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+}
+
+.lightbox-modal.active .lightbox-content {
+  transform: scale(1);
+}
+
+.lightbox-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  background: white;
+  color: black;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.lightbox-close:hover {
+  background: var(--aqua);
+  color: white;
+}
+
