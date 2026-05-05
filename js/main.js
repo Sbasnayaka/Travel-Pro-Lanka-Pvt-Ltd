@@ -78,12 +78,25 @@ document.addEventListener('DOMContentLoaded', () => {
         if (entry.isIntersecting) {
           navLinks.forEach(a => {
             const href = a.getAttribute('href');
-            a.classList.toggle('active', href === `#${entry.target.id}`);
+            // Support both #id and index.html#id
+            const isActive = href === `#${entry.target.id}` || href === `index.html#${entry.target.id}`;
+            a.classList.toggle('active', isActive);
           });
         }
       });
     }, observerOptions);
 
     sections.forEach(s => observer.observe(s));
+  } else {
+    // If not on the main page, handle active state based on current URL
+    const currentPath = window.location.pathname;
+    navLinks.forEach(a => {
+      const href = a.getAttribute('href');
+      if (href && currentPath.includes(href)) {
+        a.classList.add('active');
+      } else {
+        a.classList.remove('active');
+      }
+    });
   }
 });
